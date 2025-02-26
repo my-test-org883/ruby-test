@@ -20,8 +20,9 @@ GEM
       coderay (~> 1.1)
       method_source (~> 1.0)
     racc (1.7.3)
+    rack (1.5.2)
     rainbow (3.1.1)
-    rake (13.1.0)
+    rake (12.3.2)
     regexp_parser (2.9.0)
     rexml (3.3.9)
     rubocop (1.61.0)
@@ -63,7 +64,8 @@ DEPENDENCIES
   mutex_m
   parser
   pry
-  rake
+  rack (= 1.5.2)
+  rake (= 12.3.2)
   rubocop
   rubocop-ast
   rubocop-minitest
