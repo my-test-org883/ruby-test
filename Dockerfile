@@ -5,7 +5,9 @@ RUN apk update && apk upgrade && \
 
 COPY Gemfile Gemfile.lock .
 
-RUN gem install bundler -v "$(grep -A 1 "BUNDLED WITH" Gemfile.lock | tail -n 1)" && \
+RUN gem install loofah -v 2.2.2
+
+RUN gem install bundler -v "$(grep -A 1 'BUNDLED WITH' Gemfile.lock | tail -n 1)" && \
     bundle config set without 'development test' && \
     bundle install
 
