@@ -23,4 +23,5 @@ jobs:
         with:
           registry_module: boostsecurityio/trivy-image
           api_token: ${{ secrets.BOOST_API_TOKEN }}
+        env:
           BOOST_IMAGE_NAME: test:release
